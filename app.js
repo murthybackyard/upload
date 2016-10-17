@@ -6,8 +6,12 @@ var fs = require('fs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', function(req, res){
-  res.sendFile(path.join(__dirname, 'views/index.html'));
+//app.get('/', function(req, res){
+//  res.sendFile(path.join(__dirname, 'views/index.html'));
+//});
+
+app.get('/', function(request, response) {
+  response.render('views/index');
 });
 
 app.post('/upload', function(req, res){
