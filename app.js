@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {
-  response.render('index');
+  response.render('index.html');
 });
 
 app.post('/upload', function(req, res){
