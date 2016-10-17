@@ -9,9 +9,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.get('/', function(req, res){
 //  res.sendFile(path.join(__dirname, 'views/index.html'));
 //});
+app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {
-  response.render('views/index');
+  response.render('index');
 });
 
 app.post('/upload', function(req, res){
