@@ -17,7 +17,7 @@ app.get('/', function(request, response) {
 });
 
 app.post('/upload', function(req, res){
-
+  console.log('inside upload method');
   // create an incoming form object
   var form = new formidable.IncomingForm();
 
@@ -26,6 +26,8 @@ app.post('/upload', function(req, res){
 
   // store all uploads in the /uploads directory
   form.uploadDir = path.join(__dirname, '/uploads');
+  console.log('upload dirname1',__dirname);
+  
 
   // every time a file has been uploaded successfully,
   // rename it to it's orignal name
