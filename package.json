@@ -1,5 +1,5 @@
 {
-  "name": "file uploader",
+  "name": "file-uploader",
   "version": "0.2.5",
   "description": "NodeJS file uploader",
   "engines": {
