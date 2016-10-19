@@ -33,10 +33,10 @@ $('#upload-input').on('change', function(){
       xhr: function() {
         // create an XMLHttpRequest
         var xhr = new XMLHttpRequest();
-
+        console.log('inside upload xhr');
         // listen to the 'progress' event
         xhr.upload.addEventListener('progress', function(evt) {
-
+            console.log('inside upload addEventListener');
           if (evt.lengthComputable) {
             // calculate the percentage of upload completed
             var percentComplete = evt.loaded / evt.total;
