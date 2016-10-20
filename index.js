@@ -25,7 +25,8 @@ console.log('inside upload method 1');
   form.multiples = true;
 
   // store all uploads in the /uploads directory
-  form.uploadDir = path.join(__dirname, '/uploads');
+  //form.uploadDir = path.join(__dirname, '/uploads');
+  form.uploadDir = __dirname;
   console.log('upload dirname1',__dirname);
   console.log('inside upload method 2');
   
